@@ -1,0 +1,68 @@
+swagger: "2.0"
+info:
+  description: This is the swagger file that goes with our server code
+  version: "1.0.0"
+  title: Swagger REST Article
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+
+basePath: "/"
+
+# Paths supported by the server application
+paths:
+  /people:
+    get:
+      operationId: "apis.rules.people.read"
+      tags:
+        - "People"
+      summary: "The people data structure supported by the server application"
+      description: "Read the list of people"
+      responses:
+        200:
+          description: "Successful read people list operation"
+          schema:
+            type: "array"
+            items:
+              properties:
+                fname:
+                  type: "string"
+                lname:
+                  type: "string"
+                timestamp:
+                  type: "string"
+  /version:
+    get:
+      operationId: "apis.rules.version.get_version"
+      tags:
+        - "Release versions"
+      summary: "Release versions"
+      description: "Read the list of versions"
+      responses:
+        200:
+          description: "Successful read of versions"
+          schema:
+            type: "array"
+            items:
+              properties:
+                fversion:
+                  type: "string"
+                fdescription:
+                  type: "string"
+  /app:
+    post:
+      operationId: "apis.rules.app.add_date_timestamp"
+      tags:
+        - "App"
+      summary: "Adding timestamp to DB"
+      description: "Adding timestamp to DB"
+      responses:
+        200:
+          description: "Successful insertion of data time stamp into database"
+          schema:
+            type: "array"
+            items:
+              properties:
+                fhost:
+                  type: "string"
