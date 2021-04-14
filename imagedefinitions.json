@@ -1,0 +1,6 @@
+[
+  {
+    "name": "my-container",
+    "imageUri": "003191751804.dkr.ecr.eu-west-2.amazonaws.com/poc:latest"
+  }
+]
