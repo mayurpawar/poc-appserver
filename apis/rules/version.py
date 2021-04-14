@@ -5,7 +5,7 @@ RELEASE_VERSIONS = {
         "fdescription" : "First version released",
     },
     2: {
-        "fversion": "3.0",
+        "fversion": "4.0",
         "fdescription" : "Version API added",
     }
 }
