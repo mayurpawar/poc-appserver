@@ -52,4 +52,4 @@ def add_date_timestamp():
         conn.populate_db()
 
     #return Response(status=200, mimetype='application/json')
-    return Response(socket.gethostname(), status=200, mimetype='application/json')
+    return Response(status=200, mimetype='application/json')
